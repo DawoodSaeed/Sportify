@@ -54,11 +54,15 @@ body {
   background: #69d2e7;
   font-size: 0.8125rem;
   color: #fff;
-  padding: 15px;
+  padding: 10px;
   margin-top: 15px;
   cursor: pointer;
 }
 
+.btn:hover{
+  background: #79c8d8;
+  color: #fff;
+}
 
 /*Border color*/
 .border-u-color{
@@ -691,6 +695,7 @@ body {
 /*Image Overlays*/
 .imgOverlays,
 .imageInfoCon{
+  margin-top: 10px;
   width: 250px;
   position: relative;
   cursor: pointer;
@@ -701,6 +706,7 @@ body {
   width: 100%;
   height: 100%;
   display: block;
+  object-fit: contain;
 }
 .imageInfoCon:hover .imgOverlays::after{
   content: "";
@@ -719,6 +725,12 @@ body {
     display: flex ;
     justify-content: center;
   }
+
+
+  // .imgOverlays,
+  // .imageInfoCon{
+  //   width: 100%;
+  // }
 }
 
 /*Sine there was no gap between images (new product images) I reduce the images on this size*/
@@ -727,6 +739,12 @@ body {
     width: 200px;
     height: 200px;
   }
+
+  // .imgOverlays,
+  // .imageInfoCon,
+  // .imgOverlays img{
+  //   width: 100% !important;
+  // }
   
 }
 /*And then again increase the size back to the normal*/
@@ -955,6 +973,14 @@ body {
 }
 
 
+
+
+
+
+/*For the footer*/
+.footer{
+  height: 500px;
+}
 .list-group-item{
   background: #0F1E22;
   border: none;
@@ -997,8 +1023,8 @@ body {
 
 .footer-center{
   height: 500px;
-  padding: 30px;
-  background: url("../img/sectionBg/bg_footer_center.jpg") center/cover no-repeat;
+  padding: 20px;
+  background: url("../img/sectionBg/bg_footer_center.jpg") top/cover no-repeat;
 
   input[type="text"],
   input[type="submit"]{
@@ -1022,5 +1048,269 @@ body {
   input:focus{
     outline: none;
   }
+
+
+  .footer-center__title{
+    font-size: 27px;
+    margin-top: 110px;
+  }
+
+
+  .social-links ul > li{
+    font-size: 20px;
+    padding-left: 5px;
+    list-style-type: none;
+  }
+
+
+  .social-links ul li i{
+    color: #eee;
+    // color: #0F1E22;
+  }
 }
 
+
+//about page
+.about-head{
+  margin-top: 2%;
+}
+
+
+.about-text{
+  color: red;
+}
+
+.about-head-text{
+  font-size: 30px;
+}
+
+.about-small-head{
+  background-color: #69d2e7;
+  color: #fff;
+  padding: 2%;
+  font-size: 20px;
+  width: max-content;
+  font-weight: 400;
+}
+
+.about-p{
+  font-size: 15px;
+}
+
+.skills-div{
+  margin-top: 0%;
+}
+
+.progress-div{
+  margin-top: 3%;
+}
+
+.progress-text{
+  margin: 0;
+}
+
+.team-img{
+  width: 70%;
+  border-radius: 50%;
+  padding: 2%;
+  margin-bottom: 3%;
+}
+
+.img-div h4{
+  font-size: 22px;
+}
+
+.img-div p{
+  font-size: 16px;
+}
+
+.team-row{
+  margin-bottom: 4%;
+}
+
+.team-head{
+  margin-bottom: 2%;
+}
+
+.login-head{
+  font-size: 25px;
+  margin: 5%;
+}
+
+#register-form{
+  display: none;
+}
+
+.login-form{
+  margin-top: 3%;
+}
+
+.login-form input{
+  width: 50%;
+}
+
+
+.tab-btn{
+  width: 25%;
+  border: none;
+  outline: none;
+}
+
+
+.login-btn{
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.form-display{
+  background-color: #fff;
+  padding: 2%;
+}
+
+
+
+// Cart Icons
+.cart-btn {
+  position: relative;
+  cursor: pointer;
+
+
+  i{
+    font-size: 20px;
+  }
+}
+.cart-items {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #69d2e7;
+  padding: 0 5px;
+  border-radius: 30%;
+  color: #fff;
+}
+
+
+
+
+// ###################################### CART ITEMS ##############################
+/* --------------- Cart ---------------- */
+.cart-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  transition:  all 0.3s linear;
+  background: rgba(105, 210, 231, 0.738);
+  // Stacking context ....
+  z-index: 12;
+  visibility: hidden;
+}
+.cart {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  z-index: 13;
+  background: #fff;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  transform: translateX(0);
+}
+.showCart {
+  transform: translateX(0);
+}
+.transparentBcg {
+  visibility: visible;
+}
+@media screen and (min-width: 768px) {
+  .cart {
+    width: 30vw;
+    min-width: 450px;
+  }
+}
+
+.close-cart {
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+.cart h2 {
+  text-transform: capitalize;
+  text-align: center;
+  letter-spacing: 1;
+  margin-bottom: 2rem;
+}
+/*---------- Cart Item -------------------- */
+.cart-item {
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto 1fr auto;
+  grid-column-gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+.cart-item img {
+  width: 75px;
+  height: 75px;
+}
+.cart-item h4 {
+  font-size: 0.85rem;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+.cart-item h5 {
+  margin: 0.5rem 0;
+  letter-spacing: 1px;
+}
+.item-amount {
+  text-align: center;
+}
+.remove-item {
+  color: grey;
+  cursor: pointer;
+}
+.fa-chevron-up,
+.fa-chevron-down {
+  color: #69d2e7;
+  cursor: pointer;
+}
+/*---------- End of Cart Item -------------------- */
+
+.cart-footer {
+  margin-top: 2rem;
+  letter-spacing: 1px;
+  text-align: center;
+
+
+  
+}
+.cart-footer h3 {
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+/* --------------- End of Cart ---------------- */
+
+// form validation
+#emailValidator{
+  color: #fff;
+}
+
+#product-form{
+  padding-top: 3%;
+}
+
+
+
+//login form of admin
+
+#loginForm{
+  padding: 3%;
+}
+
+#loginCol{
+  border: 2px solid #69d2e7;
+  padding: 3%;
+  border-radius: 5%;
+}

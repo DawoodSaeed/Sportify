@@ -1,284 +1,543 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dawood Saeed</title>
+    <title>Sportify</title>
     <!-- Font -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 
     <!-- Bootstrap + Styles -->
     <link rel="stylesheet" href="css/app.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous"
-    />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <script src="scripts/index.js" defer></script>
-  </head>
-  <body>
-    <div
-      class="header d-flex flex-column flex-sm-row justify-content-around align-items-center d-lg-none"
-    >
-      <div class="img-container">
-        <img src="img/logo.png" alt="Logo of site" />
-      </div>
+    <script src="scripts/cart.js" defer></script>
+    <script src="scripts/cartEvents.js" defer></script>
+    <script src="scripts/validation.js" defer></script>
+</head>
 
-      <div class="header-icons">
-        <span>
+<body>
+    <div class="header d-flex flex-column flex-sm-row justify-content-around align-items-center d-lg-none">
+        <div class="img-container">
+            <img src="img/logo.png" alt="Logo of site" />
+        </div>
+
+        <div class="header-icons">
+            <span>
           <i class="fas fa-search"></i>
         </span>
-        <span>
+            <span>
           <i class="fas fa-shopping-cart"></i>
         </span>
-      </div>
+        </div>
     </div>
 
     <div class="nav-mobo w-75 mx-auto my-3 d-block d-lg-none">
-      <div class="d-flex justify-content-between align-items-center pr-3">
-        <div class="logo-mobile">
-          <img src="img/moboLogo.PNG" alt="" />
-        </div>
-
-        <div class="menu">
-          <i class="fas fa-bars text-white"></i>
-        </div>
-      </div>
-    </div>
-    <nav id="nav" class="d-none d-lg-flex">
-      <div class="nav-left"></div>
-
-      <div class="nav_imgContainer">
-        <img src="img/logo.png" alt="Logo of the site" />
-      </div>
-
-      <ul class="nav-right d-flex">
-        <li>
-          <a class="" href="#">Home</a>
-        </li>
-        <li>
-          <a href="#">Men</a>
-        </li>
-        <li>
-          <a href="#">Ladies</a>
-        </li>
-        <li>
-          <a href="#">Kids</a>
-          <div class="container">
-            <div class="row dropdown-mega">
-              <div class="col-3 px-3 mt-3">
-                <h5>Dresses</h5>
-                <ul class="">
-                  <li><a href="">Accessories</a></li>
-                  <li><a href="">Hats and Gloves</a></li>
-                  <li><a href="">Frok</a></li>
-                  <li><a href="">Baqwas Dress</a></li>
-                </ul>
-
-                <h5 class="pt-5">Shoes</h5>
-                <ul>
-                  <li><a href="">Accessories</a></li>
-                  <li><a href="">Hats and Gloves</a></li>
-                  <li><a href="">Frok</a></li>
-                  <li><a href="">Baqwas Dress</a></li>
-                </ul>
-              </div>
-
-              <div class="col-3 px- mt-3">
-                <h5>Dresses</h5>
-                <ul class="">
-                  <li><a href="">Accessories</a></li>
-                  <li><a href="">Hats and Gloves</a></li>
-                  <li><a href="">Frok</a></li>
-                  <li><a href="">Baqwas Dress</a></li>
-                </ul>
-
-                <h5 class="pt-5">Shoes</h5>
-                <ul>
-                  <li><a href="">Accessories</a></li>
-                  <li><a href="">Hats and Gloves</a></li>
-                  <li><a href="">Frok</a></li>
-                  <li><a href="">Baqwas Dress</a></li>
-                </ul>
-              </div>
-
-              <div class="col-6 mt-3">
-                <div class="row">
-                  <div class="col-12">
-                    <div class="card mb-3">
-                      <div class="row no-gutters">
-                        <div class="col-md-4 img-card-container">
-                          <img src="img/items/item1.jpg" alt="..." />
-                        </div>
-                        <div class="col-md-8">
-                          <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">
-                              This is a wider card with supporting text below as
-                              a natural lead-in to additional content
-                            </p>
-
-                            <a href="#" class="btn">Shop Now</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-12">
-                    <div class="card mb-3">
-                      <div class="row no-gutters">
-                        <div class="col-md-4 img-card-container">
-                          <img src="img/items/item2.jpg" alt="..." />
-                        </div>
-                        <div class="col-md-8">
-                          <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">
-                              This is a wider card with supporting text below as
-                              a natural lead-in to additional content.
-                            </p>
-                            <a href="#" class="btn">Shop Now</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        <div class="d-flex justify-content-between align-items-center pr-3">
+            <div class="logo-mobile">
+                <img src="img/moboLogo.PNG" alt="" />
             </div>
-          </div>
-        </li>
 
-        <li>
-          <a href="#">Accessories</a>
-        </li>
+            <div class="menu">
+                <i class="fas fa-bars text-white"></i>
+            </div>
+        </div>
 
-        <li>
-          <a href="#">Blog</a>
-        </li>
+        <div class="d-flex-column justify-content-between align-items-center">
+            <div class="">
+                <p>Home</p>
+            </div>
+            <div>
+                <p>About</p>
+            </div>
+        </div>
 
-        <li>
-          <a href="#">About Us</a>
-        </li>
-      </ul>
+
+    </div>
+
+    <nav id="nav" class="d-none d-lg-flex">
+        <div class="nav-left"></div>
+
+        <div class="nav_imgContainer">
+            <img src="img/logo.png" alt="Logo of the site" />
+        </div>
+
+        <ul class="nav-right d-flex">
+            <li>
+                <a class="" href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="#">Cricket</a>
+                <div class="container">
+                    <div class="row dropdown-mega">
+                        <div class="col-3 px-3 mt-3">
+                            <h5>Shirts</h5>
+                            <ul class="">
+                                <li><a href="">Men</a></li>
+                                <li><a href="">Women</a></li>
+                                <li><a href="">Children</a></li>
+                                <li><a href="">Toddlers</a></li>
+                            </ul>
+
+                            <h5 class="pt-5">Shoes</h5>
+                            <ul>
+                                <li><a href="">Men</a></li>
+                                <li><a href="">Women</a></li>
+                                <li><a href="">Children</a></li>
+                                <li><a href="">Toddlers</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-3 px- mt-3">
+                            <h5>Socks</h5>
+                            <ul class="">
+                                <li><a href="">Men</a></li>
+                                <li><a href="">Women</a></li>
+                                <li><a href="">Children</a></li>
+                                <li><a href="">Toddlers</a></li>
+                            </ul>
+
+                            <h5 class="pt-5">Others</h5>
+                            <ul>
+                                <li><a href="">Gloves</a></li>
+                                <li><a href="">Knee Pads</a></li>
+                                <li><a href="">Helmets</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-6 mt-3">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card mb-3">
+                                        <div class="row no-gutters">
+                                            <div class="col-md-4 img-card-container">
+                                                <img src="img/items/item1.jpg" alt="..." />
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Sports Shirt</h5>
+                                                    <p class="card-text">
+                                                        Get the latest sports shirt for your favorite sports at a discounted price today. Shop &nbsp;
+                                                    </p>
+
+                                                    <a href="#" class="btn">Shop Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="card mb-3">
+                                        <div class="row no-gutters">
+                                            <div class="col-md-4 img-card-container">
+                                                <img src="img/items/item2.jpg" alt="..." />
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Sports Shirt</h5>
+                                                    <p class="card-text">
+                                                        Get the latest sports shirt for your favorite sports at a discounted price today. Shop &nbsp;
+                                                    </p>
+                                                    <a href="#" class="btn">Shop Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="#">Tennis</a>
+                <div class="container">
+                    <div class="row dropdown-mega">
+                        <div class="col-3 px-3 mt-3">
+                            <h5>Shirts</h5>
+                            <ul class="">
+                                <li><a href="">Men</a></li>
+                                <li><a href="">Women</a></li>
+                                <li><a href="">Children</a></li>
+                                <li><a href="">Toddlers</a></li>
+                            </ul>
+
+                            <h5 class="pt-5">Shoes</h5>
+                            <ul>
+                                <li><a href="">Men</a></li>
+                                <li><a href="">Women</a></li>
+                                <li><a href="">Children</a></li>
+                                <li><a href="">Toddlers</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-3 px- mt-3">
+                            <h5>Socks</h5>
+                            <ul class="">
+                                <li><a href="">Men</a></li>
+                                <li><a href="">Women</a></li>
+                                <li><a href="">Children</a></li>
+                                <li><a href="">Toddlers</a></li>
+                            </ul>
+
+                            <h5 class="pt-5">Others</h5>
+                            <ul>
+                                <li><a href="">Caps</a></li>
+                                <li><a href="">Hairbands</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-6 mt-3">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card mb-3">
+                                        <div class="row no-gutters">
+                                            <div class="col-md-4 img-card-container">
+                                                <img src="img/items/item1.jpg" alt="..." />
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Sports Shirt</h5>
+                                                    <p class="card-text">
+                                                        Get the latest sports shirt for your favorite sports at a discounted price today. Shop &nbsp;
+                                                    </p>
+
+                                                    <a href="#" class="btn">Shop Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="card mb-3">
+                                        <div class="row no-gutters">
+                                            <div class="col-md-4 img-card-container">
+                                                <img src="img/items/item2.jpg" alt="..." />
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Sports Shirt</h5>
+                                                    <p class="card-text">
+                                                        Get the latest sports shirt for your favorite sports at a discounted price today. Shop &nbsp;
+                                                    </p>
+                                                    <a href="#" class="btn">Shop Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="#">Football</a>
+                <div class="container">
+                    <div class="row dropdown-mega">
+                        <div class="col-3 px-3 mt-3">
+                            <h5>Shirts</h5>
+                            <ul class="">
+                                <li><a href="">Men</a></li>
+                                <li><a href="">Women</a></li>
+                                <li><a href="">Children</a></li>
+                                <li><a href="">Toddlers</a></li>
+                            </ul>
+
+                            <h5 class="pt-5">Shoes</h5>
+                            <ul>
+                                <li><a href="">Men</a></li>
+                                <li><a href="">Women</a></li>
+                                <li><a href="">Children</a></li>
+                                <li><a href="">Toddlers</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-3 px- mt-3">
+                            <h5>Socks</h5>
+                            <ul class="">
+                                <li><a href="">Men</a></li>
+                                <li><a href="">Women</a></li>
+                                <li><a href="">Children</a></li>
+                                <li><a href="">Toddlers</a></li>
+                            </ul>
+
+                            <h5 class="pt-5">Others</h5>
+                            <ul>
+                                <li><a href="">Gloves</a></li>
+                                <li><a href="">Knee Pads</a></li>
+                                <li><a href="">Helmets</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-6 mt-3">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card mb-3">
+                                        <div class="row no-gutters">
+                                            <div class="col-md-4 img-card-container">
+                                                <img src="img/items/item1.jpg" alt="..." />
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Sports Shirt</h5>
+                                                    <p class="card-text">
+                                                        Get the latest sports shirt for your favorite sports at a discounted price today. Shop &nbsp;
+                                                    </p>
+
+                                                    <a href="#" class="btn">Shop Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="card mb-3">
+                                        <div class="row no-gutters">
+                                            <div class="col-md-4 img-card-container">
+                                                <img src="img/items/item2.jpg" alt="..." />
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Sports Shirt</h5>
+                                                    <p class="card-text">
+                                                        Get the latest sports shirt for your favorite sports at a discounted price today. Shop &nbsp;
+                                                    </p>
+                                                    <a href="#" class="btn">Shop Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <a href="#">Hockey</a>
+                <div class="container">
+                    <div class="row dropdown-mega">
+                        <div class="col-3 px-3 mt-3">
+                            <h5>Shirts</h5>
+                            <ul class="">
+                                <li><a href="">Men</a></li>
+                                <li><a href="">Women</a></li>
+                                <li><a href="">Children</a></li>
+                                <li><a href="">Toddlers</a></li>
+                            </ul>
+
+                            <h5 class="pt-5">Shoes</h5>
+                            <ul>
+                                <li><a href="">Men</a></li>
+                                <li><a href="">Women</a></li>
+                                <li><a href="">Children</a></li>
+                                <li><a href="">Toddlers</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-3 px- mt-3">
+                            <h5>Socks</h5>
+                            <ul class="">
+                                <li><a href="">Men</a></li>
+                                <li><a href="">Women</a></li>
+                                <li><a href="">Children</a></li>
+                                <li><a href="">Toddlers</a></li>
+                            </ul>
+
+                            <h5 class="pt-5">Others</h5>
+                            <ul>
+                                <li><a href="">Gloves</a></li>
+                                <li><a href="">Knee Pads</a></li>
+                                <li><a href="">Helmets</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-6 mt-3">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card mb-3">
+                                        <div class="row no-gutters">
+                                            <div class="col-md-4 img-card-container">
+                                                <img src="img/items/item1.jpg" alt="..." />
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Sports Shirt</h5>
+                                                    <p class="card-text">
+                                                        Get the latest sports shirt for your favorite sports at a discounted price today. Shop &nbsp;
+                                                    </p>
+
+                                                    <a href="#" class="btn">Shop Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="card mb-3">
+                                        <div class="row no-gutters">
+                                            <div class="col-md-4 img-card-container">
+                                                <img src="img/items/item2.jpg" alt="..." />
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Sports Shirt</h5>
+                                                    <p class="card-text">
+                                                        Get the latest sports shirt for your favorite sports at a discounted price today. Shop &nbsp;
+                                                    </p>
+                                                    <a href="#" class="btn">Shop Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <a href="about.html">About Us</a>
+            </li>
+
+            <li>
+                <a id="cart-nav-btn">
+                    <div class="cart-btn">
+                        <span class="nav-icon">
+                <i class="fas fa-shopping-cart" ></i>
+              </span>
+                        <div class="cart-items">1</div>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a href="login.html">
+                    <div class="cart-btn">
+                        <span class="nav-icon">
+                <i class="fas fa-user"></i>
+              </span>
+                    </div>
+                </a>
+            </li>
+
+        </ul>
     </nav>
 
     <div class="slider">
-      <div class="slides text-center text-lg-left">
-        <div class="slide current d-flex flex-column justify-content-center">
-          <div class="content ml-0">
-            <h1 class="scaleDownAnimation">FASHION SWEATER COLOR.</h1>
-            <p class="scaleUpAnimation">
-              Discover the collection as styled by fashion icon Caroline Issa in
-              <br />
-              our new seasoncampaign.
-            </p>
-            <p class="scaleUpAnimation">
-              <small><b>Best Price: $370</b></small>
-            </p>
+        <div class="slides text-center text-lg-left">
+            <div class="slide current d-flex flex-column justify-content-center">
+                <div class="content ml-0">
+                    <h1 class="scaleDownAnimation">FASHION SWEATER COLOR.</h1>
+                    <p class="scaleUpAnimation">
+                        Discover the collection as styled by fashion icon Caroline Issa in
+                        <br /> our new seasoncampaign.
+                    </p>
+                    <p class="scaleUpAnimation">
+                        <small><b>Best Price: $370</b></small>
+                    </p>
 
-            <button class="btn btn-primary scaleDownAnimationBtn">
+                    <button class="btn btn-primary scaleDownAnimationBtn">
               <a href="#">Shop Now</a>
             </button>
-          </div>
-        </div>
+                </div>
+            </div>
 
-        <div class="slide d-flex flex-column justify-content-center">
-          <div class="content ml-0">
-            <h1>FASHION SWEATER COLOR.</h1>
-            <p>
-              Discover the collection as styled by fashion icon Caroline Issa in
-              <br />
-              our new seasoncampaign.
-            </p>
-            <p>
-              <small><b>Best Price: $370</b></small>
-            </p>
+            <div class="slide d-flex flex-column justify-content-center">
+                <div class="content ml-0">
+                    <h1>FASHION SWEATER COLOR.</h1>
+                    <p>
+                        Discover the collection as styled by fashion icon Caroline Issa in
+                        <br /> our new seasoncampaign.
+                    </p>
+                    <p>
+                        <small><b>Best Price: $370</b></small>
+                    </p>
 
-            <button class="btn btn-primary">
+                    <button class="btn btn-primary">
               <a href="#">Shop Now</a>
             </button>
-          </div>
-        </div>
+                </div>
+            </div>
 
-        <div class="slide d-flex flex-column justify-content-center">
-          <div class="content ml-0">
-            <h1>FASHION SWEATER COLOR.</h1>
-            <p>
-              Discover the collection as styled by fashion icon Caroline Issa in
-              <br />
-              our new seasoncampaign.
-            </p>
-            <p>
-              <small><b>Best Price: $370</b></small>
-            </p>
+            <div class="slide d-flex flex-column justify-content-center">
+                <div class="content ml-0">
+                    <h1>FASHION SWEATER COLOR.</h1>
+                    <p>
+                        Discover the collection as styled by fashion icon Caroline Issa in
+                        <br /> our new seasoncampaign.
+                    </p>
+                    <p>
+                        <small><b>Best Price: $370</b></small>
+                    </p>
 
-            <button class="btn btn-primary">
+                    <button class="btn btn-primary">
               <a href="#">Shop Now</a>
             </button>
-          </div>
+                </div>
+            </div>
+            <!-- Slider Ends  -->
         </div>
-        <!-- Slider Ends  -->
-      </div>
 
-      <div class="slider-btn">
-        <button id="prev">
+        <div class="slider-btn">
+            <button id="prev">
           <i class="fas fa-arrow-left"></i>
         </button>
-        <button id="next">
+            <button id="next">
           <i class="fas fa-arrow-right"></i>
         </button>
-      </div>
+        </div>
     </div>
 
     <div class="productList bg-secondary mb-5">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="productList__productItem col-12 col-md-3 text-center">
-            <span class="productList__icon">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="productList__productItem col-12 col-md-3 text-center">
+                    <span class="productList__icon">
               <i class="fab fa-optin-monster"></i>
             </span>
-            <p class="productList__title">CRICKET</p>
-          </div>
+                    <p class="productList__title">CRICKET</p>
+                </div>
 
-          <div class="productList__productItem col-12 col-md-3 text-center">
-            <span class="productList__icon">
+                <div class="productList__productItem col-12 col-md-3 text-center">
+                    <span class="productList__icon">
               <i class="fab fa-dribbble"></i>
             </span>
-            <p class="productList__title">TENNIS</p>
-          </div>
+                    <p class="productList__title">TENNIS</p>
+                </div>
 
-          <div class="productList__productItem col-12 col-md-3 text-center">
-            <span class="productList__icon">
+                <div class="productList__productItem col-12 col-md-3 text-center">
+                    <span class="productList__icon">
               <i class="fab fa-weibo"></i>
             </span>
-            <p class="productList__title">SOCCER</p>
-          </div>
+                    <p class="productList__title">FOOTBALL</p>
+                </div>
 
-          <div class="productList__productItem col-12 col-md-3 text-center">
-            <span class="productList__icon">
+                <div class="productList__productItem col-12 col-md-3 text-center">
+                    <span class="productList__icon">
               <i class="fas fa-baseball-ball"></i>
             </span>
-            <p class="productList__title">BASEBALL</p>
-          </div>
+                    <p class="productList__title">HOCKEY</p>
+                </div>
 
-          <!-- ############# Row -->
+                <!-- ############# Row -->
+            </div>
+            <!-- ######## Container Ends here -->
         </div>
-        <!-- ######## Container Ends here -->
-      </div>
 
-      <!-- Product list ends here -->
+        <!-- Product list ends here -->
     </div>
 
     <!-- ########################## 
@@ -287,541 +546,477 @@
     ############################################# -->
 
     <div class="featureList container mb-5">
-      <div class="row align-items-center justify-content-around">
-        <div
-          class="featureList__feature text-center col-12 col-sm-6 col-lg-3 mt-5 mt-sm-5 mt-lg-0"
-        >
-          <span class="featureList__icon text-center">
+        <div class="row align-items-center justify-content-around">
+            <div class="featureList__feature text-center col-12 col-sm-6 col-lg-3 mt-5 mt-sm-5 mt-lg-0">
+                <span class="featureList__icon text-center">
             <i class="fas fa-rocket"></i>
           </span>
-          <p class="featuteList__title">RETURN & EXCHANGE</p>
-          <p class="featureList__text">
-            Lorem ipsum dolor sit amet cowead- ipiscing eli sed do
-          </p>
-        </div>
+                <p class="featuteList__title">RETURN & EXCHANGE</p>
+                <p class="featureList__text">
+                    Return the products you do not like and get free exchange
+                </p>
+            </div>
 
-        <!-- feature #2 -->
-        <div
-          class="featureList__feature text-center col-12 col-sm-6 col-lg-3 mt-5 mt-sm-5 mt-lg-0"
-        >
-          <span class="featureList__icon"> <i class="fas fa-truck"></i> </span>
-          <p class="featuteList__title">FREE SHIPPING</p>
-          <p class="featureList__text">
-            Lorem ipsum dolor sit amet cowead- ipiscing eli sed do
-          </p>
-        </div>
+            <!-- feature #2 -->
+            <div class="featureList__feature text-center col-12 col-sm-6 col-lg-3 mt-5 mt-sm-5 mt-lg-0">
+                <span class="featureList__icon"> <i class="fas fa-truck"></i> </span>
+                <p class="featuteList__title">FREE SHIPPING</p>
+                <p class="featureList__text">
+                    Free shipping of your orders to your doorstep
+                </p>
+            </div>
 
-        <!-- feature #3 -->
-        <div
-          class="featureList__feature text-center col-12 col-sm-6 col-lg-3 mt-5 mt-sm-5 mt-lg-0"
-        >
-          <span class="featureList__icon"> <i class="fas fa-gift"></i> </span>
-          <p class="featuteList__title">MEMBER DISCOUNT</p>
-          <p class="featureList__text">
-            Lorem ipsum dolor sit amet cowead- ipiscing eli sed do
-          </p>
-        </div>
+            <!-- feature #3 -->
+            <div class="featureList__feature text-center col-12 col-sm-6 col-lg-3 mt-5 mt-sm-5 mt-lg-0">
+                <span class="featureList__icon"> <i class="fas fa-gift"></i> </span>
+                <p class="featuteList__title">MEMBER DISCOUNT</p>
+                <p class="featureList__text">
+                    Register today to get special discounts on a wide variety of products
+                </p>
+            </div>
 
-        <!-- feature #4 -->
-        <div
-          class="featureList__feature text-center col-12 col-sm-6 col-lg-3 mt-5 mt-sm-5 mt-lg-0"
-        >
-          <span class="featureList__icon">
+            <!-- feature #4 -->
+            <div class="featureList__feature text-center col-12 col-sm-6 col-lg-3 mt-5 mt-sm-5 mt-lg-0">
+                <span class="featureList__icon">
             <i class="fas fa-headphones"></i>
           </span>
-          <p class="featuteList__title">FREE SHIPPING</p>
-          <p class="featureList__text">
-            Lorem ipsum dolor sit amet cowead- ipiscing eli sed do
-          </p>
+                <p class="featuteList__title">FREE SHIPPING</p>
+                <p class="featureList__text">
+                    Lorem ipsum dolor sit amet cowead- ipiscing eli sed do
+                </p>
+            </div>
+            <!-- Row -->
         </div>
-        <!-- Row -->
-      </div>
-      <!-- ########### FEATURE LIST ENDS HERE ################## -->
+        <!-- ########### FEATURE LIST ENDS HERE ################## -->
     </div>
 
     <!--############################ NEW PRODUCT SECTION ################### -->
     <div class="newProducts my-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h1 class="text-center heading">
-              <span class="heading__main">NEW PRODUCTS</span>
-              <span class="heading__sub">Top sale for all days</span>
-            </h1>
-            <ul class="d-none newProducts__tabs nav mx-auto d-md-flex">
-              <li class="nav-item newProducts__tabs-active">BEST SELLERS</li>
-              <li class="nav-item">COLLECTIONS</li>
-              <li class="nav-item">TRENDING</li>
-            </ul>
-          </div>
-
-          <div class="row mt-5">
-            <div
-              class="col-12 col-lg-3 col-sm-6 d-flex justify-content-center d-sm-block"
-            >
-              <div class="imageInfoCon">
-                <div class="imgOverlays imgTransition">
-                  <img
-                    src="img/products/productFive.jpg"
-                    alt="product One img"
-                  />
-                  <img
-                    src="img/products/productSix.jpg"
-                    alt="product One Alternative image"
-                    class="imgTransition__img"
-                  />
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="text-center heading">
+                        <span class="heading__main">NEW PRODUCTS</span>
+                        <span class="heading__sub">Top sale for all days</span>
+                    </h1>
+                    <ul class="d-none newProducts__tabs nav mx-auto d-md-flex">
+                        <li class="nav-item newProducts__tabs-active">BEST SELLERS</li>
+                        <li class="nav-item">COLLECTIONS</li>
+                        <li class="nav-item">TRENDING</li>
+                    </ul>
                 </div>
-                <div class="imgInfo__item">
-                  <p>Shoes With No Holes</p>
 
-                  <div
-                    class="imgInfo__cartInfo d-flex justify-content-between pl-3 align-items-center"
-                  >
-                    <span>$25.9</span>
-                    <span class="imgInfo__cardInfoIcon pr-3">
+                <div class="row mt-5">
+                    <div class="col-12 col-lg-3 col-sm-6 d-flex justify-content-center d-sm-block">
+                        <div class="imageInfoCon">
+                            <div class="imgOverlays imgTransition">
+                                <img src="img/products/productFive.jpg" alt="product One img" />
+                                <img src="img/products/productSix.jpg" alt="product One Alternative image" class="imgTransition__img" />
+                            </div>
+                            <div class="imgInfo__item">
+                                <p>Cricket Shoes</p>
+
+                                <div class="imgInfo__cartInfo d-flex justify-content-between pl-3 align-items-center">
+                                    <span>$25.9</span>
+                                    <span class="imgInfo__cardInfoIcon pr-3">
                       <i class="fas fa-shopping-cart"></i>
                     </span>
-                  </div>
-                </div>
-              </div>
-            </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-            <div
-              class="col-12 col-lg-3 col-sm-6 d-flex justify-content-center d-sm-block mt-4 mt-sm-0"
-            >
-              <div class="imageInfoCon">
-                <div class="imgOverlays imgTransition">
-                  <img
-                    src="img/products/productTwojpg.jpg"
-                    alt="product two img"
-                  />
-                  <img
-                    src="img/products/productSeven.jpg"
-                    alt="product two alternative image"
-                    class="imgTransition__img"
-                  />
-                </div>
-                <div class="imgInfo__item">
-                  <p>Shoes With No Holes</p>
+                    <div class="col-12 col-lg-3 col-sm-6 d-flex justify-content-center d-sm-block mt-4 mt-sm-0">
+                        <div class="imageInfoCon">
+                            <div class="imgOverlays imgTransition">
+                                <img src="img/products/productTwojpg.jpg" alt="product two img" />
+                                <img src="img/products/productSeven.jpg" alt="product two alternative image" class="imgTransition__img" />
+                            </div>
+                            <div class="imgInfo__item">
+                                <p>Cricket Shirt</p>
 
-                  <div
-                    class="imgInfo__cartInfo d-flex justify-content-between pl-3 align-items-center"
-                  >
-                    <span>$25.9</span>
-                    <span class="imgInfo__cardInfoIcon pr-3">
+                                <div class="imgInfo__cartInfo d-flex justify-content-between pl-3 align-items-center">
+                                    <span>$25.9</span>
+                                    <span class="imgInfo__cardInfoIcon pr-3">
                       <i class="fas fa-shopping-cart"></i>
                     </span>
-                  </div>
-                </div>
-              </div>
-            </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-            <div
-              class="col-12 col-lg-3 col-sm-6 d-flex justify-content-center d-sm-block mt-4 mt-sm-4 mt-lg-0"
-            >
-              <div class="imageInfoCon">
-                <div class="imgOverlays imgTransition">
-                  <img
-                    src="img/products/productEight.jpg"
-                    alt="product three image"
-                  />
-                  <img
-                    src="img/products/printed-chiffon-dress.jpg"
-                    alt="product three alternative image"
-                    class="imgTransition__img"
-                  />
-                </div>
-                <div class="imgInfo__item">
-                  <p>Shoes With No Holes</p>
+                    <div class="col-12 col-lg-3 col-sm-6 d-flex justify-content-center d-sm-block mt-4 mt-sm-4 mt-lg-0">
+                        <div class="imageInfoCon">
+                            <div class="imgOverlays imgTransition">
+                                <img src="img/products/productEight.jpg" alt="product three image" />
+                                <img src="img/products/printed-chiffon-dress.jpg" alt="product three alternative image" class="imgTransition__img" />
+                            </div>
+                            <div class="imgInfo__item">
+                                <p>Cotton Socks</p>
 
-                  <div
-                    class="imgInfo__cartInfo d-flex justify-content-between pl-3 align-items-center"
-                  >
-                    <span>$25.9</span>
-                    <span class="imgInfo__cardInfoIcon pr-3">
+                                <div class="imgInfo__cartInfo d-flex justify-content-between pl-3 align-items-center">
+                                    <span>$25.9</span>
+                                    <span class="imgInfo__cardInfoIcon pr-3">
                       <i class="fas fa-shopping-cart"></i>
                     </span>
-                  </div>
-                </div>
-              </div>
-            </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-            <div
-              class="col-12 col-lg-3 col-sm-6 d-flex justify-content-center d-sm-block mt-4 mt-sm-4 mt-lg-0"
-            >
-              <div class="imageInfoCon">
-                <div class="imgOverlays imgTransition">
-                  <img
-                    src="img/products/productTen.jpg"
-                    alt="product Four image"
-                  />
-                  <img
-                    src="img/products/productSix.jpg"
-                    alt="product four alternative image"
-                    class="imgTransition__img"
-                  />
-                </div>
-                <div class="imgInfo__item">
-                  <p>Shoes With No Holes</p>
+                    <div class="col-12 col-lg-3 col-sm-6 d-flex justify-content-center d-sm-block mt-4 mt-sm-4 mt-lg-0">
+                        <div class="imageInfoCon">
+                            <div class="imgOverlays imgTransition">
+                                <img src="img/products/productTen.jpg" alt="product Four image" />
+                                <img src="img/products/productSix.jpg" alt="product four alternative image" class="imgTransition__img" />
+                            </div>
+                            <div class="imgInfo__item">
+                                <p>Football Shoes</p>
 
-                  <div
-                    class="imgInfo__cartInfo d-flex justify-content-between pl-3 align-items-center"
-                  >
-                    <span>$25.9</span>
-                    <span class="imgInfo__cardInfoIcon pr-3">
+                                <div class="imgInfo__cartInfo d-flex justify-content-between pl-3 align-items-center">
+                                    <span>$25.9</span>
+                                    <span class="imgInfo__cardInfoIcon pr-3">
                       <i class="fas fa-shopping-cart"></i>
                     </span>
-                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
 
-          <!-- ################### ROW SECOND OF THE NEW PRODUCT ######### -->
-          <div class="row mt-5 mb-5">
-            <div
-              class="col-12 col-lg-3 col-sm-6 d-flex justify-content-center d-sm-block"
-            >
-              <div class="imageInfoCon">
-                <div class="imgOverlays imgTransition">
-                  <img
-                    src="img/products/productFive.jpg"
-                    alt="product One img"
-                  />
-                  <img
-                    src="img/products/productSix.jpg"
-                    alt="product One Alternative image"
-                    class="imgTransition__img"
-                  />
-                </div>
-                <div class="imgInfo__item">
-                  <p>Shoes With No Holes</p>
+                <!-- ################### ROW SECOND OF THE NEW PRODUCT ######### -->
+                <div class="row mt-5 mb-5">
+                    <div class="col-12 col-lg-3 col-sm-6 d-flex justify-content-center d-sm-block">
+                        <div class="imageInfoCon">
+                            <div class="imgOverlays imgTransition">
+                                <img src="img/products/productFive.jpg" alt="product One img" />
+                                <img src="img/products/productSix.jpg" alt="product One Alternative image" class="imgTransition__img" />
+                            </div>
+                            <div class="imgInfo__item">
+                                <p>Cricket Shoes</p>
 
-                  <div
-                    class="imgInfo__cartInfo d-flex justify-content-between pl-3 align-items-center"
-                  >
-                    <span>$25.9</span>
-                    <span class="imgInfo__cardInfoIcon pr-3">
+                                <div class="imgInfo__cartInfo d-flex justify-content-between pl-3 align-items-center">
+                                    <span>$25.9</span>
+                                    <span class="imgInfo__cardInfoIcon pr-3">
                       <i class="fas fa-shopping-cart"></i>
                     </span>
-                  </div>
-                </div>
-              </div>
-            </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-            <div
-              class="col-12 col-lg-3 col-sm-6 d-flex justify-content-center d-sm-block mt-4 mt-sm-0"
-            >
-              <div class="imageInfoCon">
-                <div class="imgOverlays imgTransition">
-                  <img
-                    src="img/products/productTwojpg.jpg"
-                    alt="product two img"
-                  />
-                  <img
-                    src="img/products/productSeven.jpg"
-                    alt="product two alternative image"
-                    class="imgTransition__img"
-                  />
-                </div>
-                <div class="imgInfo__item">
-                  <p>Shoes With No Holes</p>
-
-                  <div
-                    class="imgInfo__cartInfo d-flex justify-content-between pl-3 align-items-center"
-                  >
-                    <span>$25.9</span>
-                    <span class="imgInfo__cardInfoIcon pr-3">
+                    <div class="col-12 col-lg-3 col-sm-6 d-flex justify-content-center d-sm-block mt-4 mt-sm-0">
+                        <div class="imageInfoCon">
+                            <div class="imgOverlays imgTransition">
+                                <img src="img/products/productTwojpg.jpg" alt="product two img" />
+                                <img src="img/products/productSeven.jpg" alt="product two alternative image" class="imgTransition__img" />
+                            </div>
+                            <div class="imgInfo__item">
+                                <p>Football Shirt</p>
+                                <div class="imgInfo__cartInfo d-flex justify-content-between pl-3 align-items-center">
+                                    <span>$25.9</span>
+                                    <span class="imgInfo__cardInfoIcon pr-3">
                       <i class="fas fa-shopping-cart"></i>
                     </span>
-                  </div>
-                </div>
-              </div>
-            </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-            <div
-              class="col-12 col-lg-3 col-sm-6 d-flex justify-content-center d-sm-block mt-4 mt-sm-4 mt-lg-0"
-            >
-              <div class="imageInfoCon">
-                <div class="imgOverlays imgTransition">
-                  <img
-                    src="img/products/productEight.jpg"
-                    alt="product three image"
-                  />
-                  <img
-                    src="img/products/printed-chiffon-dress.jpg"
-                    alt="product three alternative image"
-                    class="imgTransition__img"
-                  />
-                </div>
-                <div class="imgInfo__item">
-                  <p>Shoes With No Holes</p>
-
-                  <div
-                    class="imgInfo__cartInfo d-flex justify-content-between pl-3 align-items-center"
-                  >
-                    <span>$25.9</span>
-                    <span class="imgInfo__cardInfoIcon pr-3">
+                    <div class="col-12 col-lg-3 col-sm-6 d-flex justify-content-center d-sm-block mt-4 mt-sm-4 mt-lg-0">
+                        <div class="imageInfoCon">
+                            <div class="imgOverlays imgTransition">
+                                <img src="img/products/productEight.jpg" alt="product three image" />
+                                <img src="img/products/printed-chiffon-dress.jpg" alt="product three alternative image" class="imgTransition__img" />
+                            </div>
+                            <div class="imgInfo__item">
+                                <p>Cotton Socks</p>
+                                <div class="imgInfo__cartInfo d-flex justify-content-between pl-3 align-items-center">
+                                    <span>$25.9</span>
+                                    <span class="imgInfo__cardInfoIcon pr-3">
                       <i class="fas fa-shopping-cart"></i>
                     </span>
-                  </div>
-                </div>
-              </div>
-            </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-            <div
-              class="col-12 col-lg-3 col-sm-6 d-flex justify-content-center d-sm-block mt-4 mt-sm-4 mt-lg-0"
-            >
-              <div class="imageInfoCon">
-                <div class="imgOverlays imgTransition">
-                  <img
-                    src="img/products/productTen.jpg"
-                    alt="product Four image"
-                  />
-                  <img
-                    src="img/products/productSix.jpg"
-                    alt="product four alternative image"
-                    class="imgTransition__img"
-                  />
-                </div>
-                <div class="imgInfo__item">
-                  <p>Shoes With No Holes</p>
+                    <div class="col-12 col-lg-3 col-sm-6 d-flex justify-content-center d-sm-block mt-4 mt-sm-4 mt-lg-0">
+                        <div class="imageInfoCon">
+                            <div class="imgOverlays imgTransition">
+                                <img src="img/products/productTen.jpg" alt="product Four image" />
+                                <img src="img/products/productSix.jpg" alt="product four alternative image" class="imgTransition__img" />
+                            </div>
+                            <div class="imgInfo__item">
+                                <p>Hockey Shoes</p>
 
-                  <div
-                    class="imgInfo__cartInfo d-flex justify-content-between pl-3 align-items-center"
-                  >
-                    <span>$25.9</span>
-                    <span class="imgInfo__cardInfoIcon pr-3">
+                                <div class="imgInfo__cartInfo d-flex justify-content-between pl-3 align-items-center">
+                                    <span>$25.9</span>
+                                    <span class="imgInfo__cardInfoIcon pr-3">
                       <i class="fas fa-shopping-cart"></i>
                     </span>
-                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
+                <!-- ROw -->
             </div>
-          </div>
-          <!-- ROw -->
+            <!-- Container Ends Here  -->
         </div>
-        <!-- Container Ends Here  -->
-      </div>
-      <!-- NEw products Ends Here  -->
+        <!-- NEw products Ends Here  -->
     </div>
 
     <!-- ################################ SALES SECTION ######################## -->
     <div class="container sales my-5">
-      <div class="row">
-        <div class="col-12 col-lg-6">
-          <!-- Sales Component -->
-          <div class="col-12 sales__product d-flex">
-            <div class="sales__productImage imgOpacity">
-              <img src="img/sectionBg/sale/sportswear.webp" alt="Sales Shirt" />
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <!-- Sales Component -->
+                <div class="col-12 sales__product d-flex">
+                    <div class="sales__productImage imgOpacity">
+                        <img src="img/sectionBg/sale/sportswear.webp" alt="Sales Shirt" />
+                    </div>
+                    <div class="sales__productDescription text-center pl-lg-5 mt-5">
+                        <p class="sales__productCompany">Football Product</p>
+                        <p class="sales__productTitle">SPORTSWEAR</p>
+                        <p class="sales__productText">
+                            Introducing the best sportswear at cheapest prices. Get this amazing football shirt for just $50
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 mt-5">
+                    <!-- Sales Component -->
+                    <div class="col-12 sales__product d-flex flex-row-reverse justify-content-between">
+                        <div class="sales__productImage-two imgOpacity">
+                            <img src="img/sectionBg/sale/nikeShoes.png" alt="Sales Shirt" />
+                        </div>
+                        <div class="sales__productDescription text-center pr-lg-5">
+                            <p class="sales__productCompany">Football product</p>
+                            <p class="sales__productTitle">SPORTSWEAR</p>
+                            <p class="sales__productText">
+                                Introducing the best sportswear at cheapest prices. Get this amazing football shoes for just $50
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="sales__productDescription text-center pl-lg-5 mt-5">
-              <p class="sales__productCompany">Nike product</p>
-              <p class="sales__productTitle">SPORTSWEAR</p>
-              <p class="sales__productText">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Ducimus aut voluptas omnis
-              </p>
-            </div>
-          </div>
-          <div class="col-12 mt-5">
-            <!-- Sales Component -->
-            <div
-              class="col-12 sales__product d-flex flex-row-reverse justify-content-between"
-            >
-              <div class="sales__productImage-two imgOpacity">
-                <img src="img/sectionBg/sale/nikeShoes.png" alt="Sales Shirt" />
-              </div>
-              <div class="sales__productDescription text-center pr-lg-5">
-                <p class="sales__productCompany">Nike product</p>
-                <p class="sales__productTitle">SPORTSWEAR</p>
-                <p class="sales__productText">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Ducimus aut voluptas omnis
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <!-- Main Discound or Sale Image Here -->
-        <div class="col-12 col-lg-6 sales__img mt-5 mt-lg-0">
-          <div class="sales__imgTextContent">
-            <p class="sales__imgTitle">Mid Season Sale - Only $69.00</p>
-            <p class="sales__imgText">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-              laudantium repellat autem eum beatae similique.
-            </p>
-          </div>
+            <!-- Main Discound or Sale Image Here -->
+            <div class="col-12 col-lg-6 sales__img mt-5 mt-lg-0">
+                <div class="sales__imgTextContent">
+                    <p class="sales__imgTitle">Mid Season Sale - Upto 65% off</p>
+                    <p class="sales__imgText">
+                        Get upto 65% discount on your favorite products in mid-season summer sale on the entire stock
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
 
     <!-- Testimonal Section -->
     <div class="testimonal sectionTopIcon text-light my-5">
-      <div class="container">
-        <div class="row py-5 mb-5">
-          <div class="col-12">
-            <h1 class="text-center heading mt-5">
-              <span class="heading__main">WHAT'S CLIENTS SAID</span>
-              <span class="heading__sub">Top sale for all days</span>
-            </h1>
-          </div>
-          <div class="col-12 col-md-6 mt-md-5">
-            <div class="story row align-items-center p-md-3">
-              <div class="col-4 d-flex justify-content-center">
-                <figure class="story__shape">
-                  <img
-                    src="img/sectionBg/testimonials/zayntake2.webp"
-                    alt=""
-                    class="story__img"
-                  />
+        <div class="container">
+            <div class="row py-5 mb-5">
+                <div class="col-12">
+                    <h1 class="text-center heading mt-5">
+                        <span class="heading__main">WHAT CUSTOMERS SAID</span>
+                        <span class="heading__sub">Top sale for all days</span>
+                    </h1>
+                </div>
+                <div class="col-12 col-md-6 mt-md-5">
+                    <div class="story row align-items-center p-md-3">
+                        <div class="col-4 d-flex justify-content-center">
+                            <figure class="story__shape">
+                                <img src="img/sectionBg/testimonials/zayntake2.webp" alt="" class="story__img" />
 
-                  <figcaption class="story__caption">Zayn Malik</figcaption>
-                </figure>
-              </div>
-              <div class="story__text col-8">
-                <h3 class="heading__teritary">Best Sportswears</h3>
-                <p>
-                  Aliquam quis risus viverra, ornare ipsum vitae, congue tellus.
-                  Vestibulum nunc lorem, scelerisque a tristique non, accumsan
-                  ornare eros. Nullam...
-                </p>
-              </div>
-            </div>
-          </div>
+                                <figcaption class="story__caption">Zayn Malik</figcaption>
+                            </figure>
+                        </div>
+                        <div class="story__text col-8">
+                            <h3 class="heading__teritary">Best Sportswear</h3>
+                            <p>
+                                Sportify have the best sportswear. I often buy several shirts and shoes from this store. The quality of products is the best I have used in years.
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
-          <div class="col-12 col-md-6 mt-4 mt-md-5">
-            <div class="story row align-items-center p-md-3">
-              <div class="col-4 d-flex justify-content-center">
-                <figure class="story__shape">
-                  <img
-                    src="img/sectionBg/testimonials/selenataketwo.jpg"
-                    alt=""
-                    class="story__img"
-                  />
-                  <figcaption class="story__caption">Selena Gomez</figcaption>
-                </figure>
-              </div>
-              <div class="story__text col-8">
-                <h3 class="heading__teritary">Best Sports Store</h3>
-                <p>
-                  Aliquam quis risus viverra, ornare ipsum vitae, congue tellus.
-                  Vestibulum nunc lorem, scelerisque a tristique non, accumsan
-                  ornare eros. Nullam...
-                </p>
-              </div>
+                <div class="col-12 col-md-6 mt-4 mt-md-5">
+                    <div class="story row align-items-center p-md-3">
+                        <div class="col-4 d-flex justify-content-center">
+                            <figure class="story__shape">
+                                <img src="img/sectionBg/testimonials/selenataketwo.jpg" alt="" class="story__img" />
+                                <figcaption class="story__caption">Selena Gomez</figcaption>
+                            </figure>
+                        </div>
+                        <div class="story__text col-8">
+                            <h3 class="heading__teritary">Best Sports Store</h3>
+                            <p>
+                                This is undoubtedly the best sports store! I love to play tennis and have ordered tennis eqipment countless times. The service and quality is amazing.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
 
     <!-- #################### FOOTER ################ -->
     <div class="footer bg-secondary">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-6 order-2 col-lg-3 pt-md-4 order-lg-1">
-            <p class="footer__tag btn btn-primary">CONTACT US</p>
-            <ul class="list-group">
-              <li class="list-group-item d-flex info-group">
-                <div
-                  class="info-group__icon d-flex justify-content-center align-items-center"
-                >
-                  <i class="fas fa-map-marker px-4"></i>
-                </div>
-                <div class="info-group__text pl-3">
-                  <p>Address:</p>
-                  <p class="text-muted">
-                    1234 Heaven Stress, Beverly Hill OldYork
-                  </p>
-                </div>
-              </li>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 order-2 col-lg-3 pt-md-4 order-lg-1">
+                    <p class="footer__tag btn btn-primary">CONTACT US</p>
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex info-group">
+                            <div class="info-group__icon d-flex justify-content-center align-items-center">
+                                <i class="fas fa-map-marker px-4"></i>
+                            </div>
+                            <div class="info-group__text pl-3">
+                                <p>Address:</p>
+                                <p class="text-muted">
+                                    G-7 Markaz, Islamabad
+                                </p>
+                            </div>
+                        </li>
 
-              <li class="list-group-item d-flex info-group">
-                <div
-                  class="info-group__icon d-flex justify-content-center align-items-center"
-                >
-                  <i class="fas fa-phone"></i>
-                </div>
-                <div class="info-group__text pl-3">
-                  <p>Phone:</p>
-                  <p class="text-muted">(800) 0123 4567 890</p>
-                </div>
-              </li>
+                        <li class="list-group-item d-flex info-group">
+                            <div class="info-group__icon d-flex justify-content-center align-items-center">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="info-group__text pl-3">
+                                <p>Phone:</p>
+                                <p class="text-muted">+92 51 2288333</p>
+                            </div>
+                        </li>
 
-              <li class="list-group-item d-flex info-group">
-                <div
-                  class="info-group__icon d-flex justify-content-center align-items-center"
-                >
-                  <i class="fas fa-envelope"></i>
-                </div>
-                <div class="info-group__text pl-3">
-                  <p>Mail:</p>
-                  <p class="text-muted">fatimahanif@example.com</p>
-                </div>
-              </li>
+                        <li class="list-group-item d-flex info-group">
+                            <div class="info-group__icon d-flex justify-content-center align-items-center">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="info-group__text pl-3">
+                                <p>Email:</p>
+                                <p class="text-muted">sportify@example.com</p>
+                            </div>
+                        </li>
 
-              <li class="list-group-item d-flex info-group">
-                <div
-                  class="info-group__icon d-flex justify-content-center align-items-center"
-                >
-                  <i class="fas fa-clock px-4"></i>
-                </div>
-                <div class="info-group__text pl-3">
-                  <p>Opening Time:</p>
-                  <p class="text-muted">
-                    Mon - Sun ......... 8:00 AM - 5:00 PM
-                  </p>
-                </div>
-              </li>
-            </ul>
-            <!-- <p>© 2022. All Rights Reserved. Designed by Dawood & Fatima</p> -->
-          </div>
-          <div
-            class="col-12 col-md-12 col-lg-5 footer-center order-1 order-lg-2"
-          >
-            <div class="newsletter d-flex flex-column text-center text-white">
-              <h5 class="mt-5">NEWSLETTER SIGN-UP</h5>
+                        <li class="list-group-item d-flex info-group">
+                            <div class="info-group__icon d-flex justify-content-center align-items-center">
+                                <i class="fas fa-clock px-4"></i>
+                            </div>
+                            <div class="info-group__text pl-3">
+                                <p>Opening Time:</p>
+                                <p class="text-muted">
+                                    Mon - Sun : 0800 - 1700
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
 
-              <p class="text-muted">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
-                odio. Quisque volutpat mattis eros.
-              </p>
+                    <!-- <p>© 2022. All Rights Reserved. Designed by Dawood & Fatima</p> -->
+                </div>
+                <div class="col-12 col-md-12 col-lg-6 footer-center order-1 order-lg-2">
+                    <div class="newsletter d-flex flex-column text-center text-white">
+                        <h5 class="footer-center__title">NEWSLETTER SIGN-UP</h5>
 
-              <div
-                class="newsletter-search d-flex align-items-center justify-content-center"
-              >
-                <input type="text" placeholder="Enter Your Email" />
-                <input type="submit" />
-              </div>
+                        <p class="text-muted">
+                            Subscribe to our newsletter using your email is to get updates regarding all products and discounts.
+                        </p>
+
+                        <div class="newsletter-search d-flex align-items-center justify-content-center">
+                            <input type="text" id="email" placeholder="Enter Your Email" autocomplete="off" />
+                            <input type="submit" id="submit-contact-form" />
+                        </div>
+                        <label for="email" id="emailValidator"></label>
+
+                    </div>
+
+                    <div class="social-links mt-5">
+                        <p class="text-center h5 text-white">FOLLOW US</p>
+                        <ul class="d-flex justify-content-center">
+                            <li class="info-group">
+                                <div class="info-group__icon d-flex justify-content-center align-items-center">
+                                    <a href="https://www.facebook.com" target="_blank">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="info-group">
+                                <div class="info-group__icon d-flex justify-content-center align-items-center">
+                                    <a href="https://www.twitter.com" target="_blank">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="info-group">
+                                <div class="info-group__icon d-flex justify-content-center align-items-center">
+                                    <a href="https://www.discord.com" target="_blank">
+                                        <i class="fab fa-discord"></i>
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="info-group">
+                                <div class="info-group__icon d-flex justify-content-center align-items-center">
+                                    <a href="https://www.youtube.com" target="_blank">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 text-muted p-md-4 order-3 order-lg-3">
+                    <p class="footer__tag btn btn-primary">ABOUT US</p>
+
+                    <p>
+                        Sportify is Pakistan's best sports store. We provide sports equipment for all major sports played all across the country. We also provide the best quality sportswear for each sport.
+                    </p>
+
+                    <p>
+                        Our mission is to provide the best quality sports eqipment at thr lowest and most affordable rates. We ensure you will be amazed by our services.
+                    </p>
+                </div>
             </div>
-          </div>
-          <div
-            class="col-12 col-md-6 col-lg-4 text-muted p-md-4 order-3 order-lg-3"
-          >
-            <p class="footer__tag btn btn-primary">ABOUT US</p>
-
-            <p>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
-              odio. Quisque volutpat mattis eros. Nullam malesuada erat ut
-              turpis. Suspendisse urna nibh, viverra non, semper suscipit,
-              posuere a, pede.
-            </p>
-
-            <p>
-              Donec nec justo eget felis facilisis fermentum. Aliquam porttitor
-              mauris sit amet orci. Aenean dignissim pellentesque felis.
-            </p>
-
-            <p>
-              Morbi in sem quis dui placerat ornare. Pellentesque odio nisi,
-              euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras
-              consequat.
-            </p>
-          </div>
         </div>
-      </div>
     </div>
-  </body>
+
+
+    <!--CART-->
+
+    <div class="cart-overlay" id="cart-overlay-div">
+        <div class="cart">
+            <span class="close-cart" id="close-cart-btn">
+          <i class="far fa-times-circle"></i>
+        </span>
+            <div class="cart-content" id="cart-content-div">
+                <div class="cart-item">
+                    <img src="./img/products/productTen.jpg" alt="Product" />
+                    <div>
+                        <h4>Tennis Shoes</h4>
+                        <h5>$9.00</h5>
+                        <span class="remove-item">Remove</span>
+                    </div>
+
+                    <div>
+                        <i class="fas fa-chevron-up" id="increase-quantity"></i>
+                        <p class="item-amount m-0" id="amount">1</p>
+                        <i class="fas fa-chevron-down" id="decrease-quantity"></i>
+                    </div>
+                </div>
+                <div class="cart-footer">
+                    <h3>Total Cost: $ <span class="cart-total">0</span></h3>
+                    <button class="clear-cart banner-btn btn btn-outline-primary btn-sm" id="clear-cart-btn">
+              Clear Cart
+            </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
 </html>

@@ -7,10 +7,52 @@
     <title>Redening Thr products</title>
 
     <script src="scripts/renderProducts.js" defer></script>
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap + Styles -->
     <link rel="stylesheet" href="css/app.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="scripts/index.js" defer></script>
+    <script src="scripts/cart.js" defer></script>
   </head>
   <body>
-    <!-- Container for the rendered products  -->
-    <div id="newProducts" class="row mt-5"></div>
+    <div class="newProducts my-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="text-center heading">
+              <span class="heading__main">NEW PRODUCTS</span>
+              <span class="heading__sub">Top sale for all days</span>
+            </h1>
+            <ul class="d-none newProducts__tabs nav mx-auto d-md-flex">
+              <li class="nav-item newProducts__tabs-active">BEST SELLERS</li>
+              <li class="nav-item">COLLECTIONS</li>
+              <li class="nav-item">TRENDING</li>
+            </ul>
+          </div>
+
+          <div class="row mt-5" id="newProducts"></div>
+
+          <!-- ROw -->
+        </div>
+        <!-- Container Ends Here  -->
+      </div>
+      <!-- NEw products Ends Here  -->
+    </div>
   </body>
 </html>

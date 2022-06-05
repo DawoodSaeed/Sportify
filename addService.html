@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Pannel</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/fba9e5900a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/adminPannel.css  " />
+
+    <script src="scripts/adminPannel.js" defer></script>
+    <script src="scripts/adminValidation.js"></script>
+  </head>
+  <body>
+    <!-- ################### NAVBAR ##################### -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="adminNavbar">
+      <a class="btn navbar-brand" href="#" role="button" id="menuBarAdmin"
+        ><i class="fa-solid fa-bars"></i
+      ></a>
+
+      <ul class="nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown ml-lg-5 mt-lg-1">
+          <form class="form-inline">
+            <input
+              class="form-control mr-sm-2 adminNavSearch"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button
+              class="btn btn-outline-primary my-2 my-sm-0 d-none d-lg-inline"
+              type="submit"
+            >
+              Search
+            </button>
+          </form>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-2" id="adminVerticalNavbar">
+          <ul class="list-group vericalAdminBar pt-3">
+            <li class="list-group-item d-flex align-items-center">
+              <a href="adminPannel.html" class="list-group-link">
+                <i class="fa-solid fa-house"></i>
+                <span class="pl-2">Dashboard</span>
+              </a>
+            </li>
+            
+
+            <li class="list-group-item collapse ml-2" id="nestedBlog">
+              <a href="addBlog.html" class="list-group-link">
+                <i class="fa-solid fa-square-rss"></i>
+                <span class="pl-2">View Blogs</span>
+              </a>
+            </li>
+            <li class="list-group-item collapse ml-2" id="nestedBlog">
+              <a href="addBlog.html" class="list-group-link">
+                <i class="fa-solid fa-square-rss"></i>
+                <span class="pl-2">Add Blog</span>
+              </a>
+            </li>
+            <li class="list-group-item d-flex align-items-center">
+              <a href="addService.html" class="list-group-link">
+                <i class="fa-solid fa-square-rss"></i>
+                <span class="pl-2">Products</span>
+              </a>
+            </li>
+            <li class="list-group-item d-flex align-items-center">
+              <i class="fa-solid fa-message"></i>
+              <span class="pl-2">Feedbacks</span>
+            </li>
+            <li class="list-group-item d-flex align-items-center">
+              <i class="fa-solid fa-user"></i>
+              <span class="pl-2">Profile</span>
+            </li>
+          </ul>
+        </div>
+        <div class="col-10 mt-3" id="mainContentAdminPannel">
+          <div class="row">
+            <div class="col-12">
+              <p class="font-one">Add New Product</p>
+            </div>
+
+            <!-- text Editor -->
+            <div class="col-12">
+              <form onsubmit="return validateForm()">
+                <div class="row">
+                  <div class="col-12 col-lg-8">
+                    <input
+                      type="text"
+                      placeholder="Enter Product Tilte"
+                      class="form-control my-3"
+                      name="postTitle"
+                      id="postTitle"
+                      onkeypress="validateForm()"
+                      autocomplete="off"
+                    />
+                    <p id="titleText"></p>
+
+                    <div class="custom-file">
+                      <input
+                        type="file"
+                        class="custom-file-input my-5"
+                        id="inputGroupFile01"
+                        aria-describedby="inputGroupFileAddon01"
+                        name="imagePost"
+                      />
+                      <label class="custom-file-label" for="inputGroupFile01"
+                        >Add Media</label
+                      >
+                    </div>
+                    <textarea
+                      name="editor"
+                      id="editor"
+                      cols="10"
+                      rows="20"
+                      onkeypress="validateForm()"
+                    ></textarea>
+                    <p id="editorText"></p>
+
+                    <input
+                      type="submit"
+                      value="Add Product"
+                      class="btn btn-primary my-3"
+                    />
+                  </div>
+
+                  <div class="col-12 col-lg-4">
+                    <div class="accordion" id="accordionExample">
+                      <div class="card bg-custom">
+                        <div
+                          class="card-header bg-custom-bg"
+                          id="card-categories"
+                        >
+                          <h2 class="mb-0">
+                            <button
+                              class="btn btn-link btn-block text-left text-dark categoriesBtn"
+                              type="button"
+                              data-toggle="collapse"
+                              data-target="#collapseOne"
+                              aria-expanded="true"
+                              aria-controls="collapseOne"
+                            >
+                              <span class="font-h2">Categories</span>
+
+                              <span class=""
+                                ><i class="fa-solid fa-angle-down"></i
+                              ></span>
+                              <hr />
+                            </button>
+                          </h2>
+                        </div>
+
+                        <div
+                          id="collapseOne"
+                          class="collapse show"
+                          aria-labelledby="headingOne"
+                          data-parent="#accordionExample"
+                        >
+                          <div class="card-body pl-3">
+                            <div class="form-group">
+                              <input
+                                type="checkbox"
+                                name="category"
+                                value="frontEnd"
+                                id="frontend"
+                                class="form-control-check"
+                              />
+                              <label for="frontend">Cricket</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- ############ CATEGIROES TWO ######### -->
+                      <div class="card bg-custom">
+                        <div
+                          id="collapseOne"
+                          class="collapse show"
+                          aria-labelledby="headingOne"
+                          data-parent="#accordionExample"
+                        >
+                          <div class="card-body pl-3">
+                            <div class="form-group">
+                              <input
+                                type="checkbox"
+                                name="category"
+                                value="backEnd"
+                                id="backend"
+                                class="form-control-check"
+                              />
+                              <label for="backend">Football</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- ############ CATEGIROES Three ######### -->
+                      <div class="card bg-custom">
+                        <div
+                          id="collapseOne"
+                          class="collapse show"
+                          aria-labelledby="headingOne"
+                          data-parent="#accordionExample"
+                        >
+                          <div class="card-body pl-3">
+                            <div class="form-group">
+                              <input
+                                type="checkbox"
+                                name="category"
+                                value="backEnd"
+                                id="backend"
+                                class="form-control-check"
+                              />
+                              <label for="backend">Tennis</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- ############ CATEGIROES four ######### -->
+                      <div class="card bg-custom">
+                        <div
+                          id="collapseOne"
+                          class="collapse show"
+                          aria-labelledby="headingOne"
+                          data-parent="#accordionExample"
+                        >
+                          <div class="card-body pl-3">
+                            <div class="form-group">
+                              <input
+                                type="checkbox"
+                                name="category"
+                                value="backEnd"
+                                id="backend"
+                                class="form-control-check"
+                              />
+                              <label for="backend">Hockey</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <!-- ######### CATEGORIES THREE ############# -->
+                      <div class="card bg-custom p-3">
+                        <a
+                          href="#addNewcat"
+                          class="text-primary"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#addNewCat"
+                          >Add new category</a
+                        >
+
+                        <div id="addNewCat" class="collapse">
+                          <form action="">
+                            <div class="form-group">
+                              <input type="text" class="form-control" />
+                              <input
+                                type="submit"
+                                value="Add category"
+                                class="btn btn-outline-primary my-3 btn-block"
+                              />
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- ############# ROW ENDS HERE ################## -->
+      </div>
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="ckeditor_4.18.0_standard_easyimage/ckeditor/ckeditor.js"></script>
+    <script>
+      CKEDITOR.replace("editor");
+    </script>
+  </body>
+</html>

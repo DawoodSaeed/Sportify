@@ -42,7 +42,8 @@ const products = {
 
     for (const prod of this.productList) {
       const col = document.createElement("div");
-      col.classList.add("col-3");
+      let classesTodAdd = ["col-12", "col-sm-6", "col-lg-3"];
+      col.classList.add(...classesTodAdd);
       console.log(prod.title);
       col.innerHTML = `
         <div class="imageInfoCon">
